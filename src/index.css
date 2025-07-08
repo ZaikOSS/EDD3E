@@ -9,32 +9,51 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 155 40% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 155 40% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 155 40% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 155 65% 35%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 155 25% 95%;
+    --secondary-foreground: 155 40% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 155 15% 96%;
+    --muted-foreground: 155 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 200 50% 92%;
+    --accent-foreground: 155 40% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 155 20% 90%;
+    --input: 155 20% 90%;
+    --ring: 155 65% 35%;
+
+    /* Custom environmental theme colors */
+    --forest-green: 155 65% 35%;
+    --ocean-blue: 200 70% 45%;
+    --earth-brown: 25 45% 55%;
+    --sky-blue: 200 80% 85%;
+    --leaf-green: 120 60% 85%;
+
+    /* Gradients */
+    --gradient-nature: linear-gradient(135deg, hsl(var(--forest-green)), hsl(var(--ocean-blue)));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--sky-blue)), hsl(var(--leaf-green)));
+    --gradient-overlay: linear-gradient(135deg, hsl(var(--forest-green) / 0.9), hsl(var(--ocean-blue) / 0.8));
+
+    /* Shadows */
+    --shadow-nature: 0 10px 30px -10px hsl(var(--forest-green) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--forest-green) / 0.15);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
