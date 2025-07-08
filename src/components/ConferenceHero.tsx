@@ -2,17 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Calendar, MapPin, Target, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-conference.jpg";
-
 export default function ConferenceHero() {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Conference Background" 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Conference Background" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-overlay"></div>
       </div>
 
@@ -72,7 +66,7 @@ export default function ConferenceHero() {
             <Mail className="h-5 w-5 mr-2" />
             Soumettre une Communication
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+          <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-primary-foreground/30 hover:bg-primary-foreground/10 text-zinc-950">
             En Savoir Plus
           </Button>
         </div>
@@ -84,6 +78,5 @@ export default function ConferenceHero() {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
