@@ -24,39 +24,6 @@ export default function ConferenceHero() {
           Environnement et Développement Durable : Éthique, Études et Éducation
         </p>
 
-        {/* Key Information Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8 max-w-4xl mx-auto">
-          <Card className="bg-background/10 backdrop-blur-sm border-primary-foreground/20 p-6">
-            <div className="flex items-center justify-center mb-4">
-              <Calendar className="h-8 w-8 text-sky-blue" />
-            </div>
-            <h3 className="text-primary-foreground font-semibold mb-2">Dates</h3>
-            <p className="text-primary-foreground/80">25, 26 et 27 novembre 2025</p>
-          </Card>
-
-          <Card className="bg-background/10 backdrop-blur-sm border-primary-foreground/20 p-6">
-            <div className="flex items-center justify-center mb-4">
-              <MapPin className="h-8 w-8 text-leaf-green" />
-            </div>
-            <h3 className="text-primary-foreground font-semibold mb-2">Lieu</h3>
-            <p className="text-primary-foreground/80">CCF/USMBA</p>
-          </Card>
-
-          <Card className="bg-background/10 backdrop-blur-sm border-primary-foreground/20 p-6">
-            <div className="flex items-center justify-center mb-4">
-              <Target className="h-8 w-8 text-earth-brown" />
-            </div>
-            <h3 className="text-primary-foreground font-semibold mb-2">Objectif</h3>
-            <p className="text-primary-foreground/80 text-sm">Recherche et formation en ERE et EDD à l'ère de l'IA</p>
-          </Card>
-        </div>
-
-        {/* Call to Action */}
-        <div className="mt-8">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-            Découvrir le Programme
-          </Button>
-        </div>
       </div>
     </section>;
 }

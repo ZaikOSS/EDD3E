@@ -38,13 +38,6 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex">
-            <Button size="sm" variant="default">
-              <Mail className="h-4 w-4 mr-2" />
-              Soumettre
-            </Button>
-          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -73,12 +66,6 @@ export default function Navbar() {
                   {item.label}
                 </a>
               ))}
-              <div className="px-3 py-2">
-                <Button size="sm" variant="default" className="w-full">
-                  <Mail className="h-4 w-4 mr-2" />
-                  Soumettre une Communication
-                </Button>
-              </div>
             </div>
           </div>
         )}

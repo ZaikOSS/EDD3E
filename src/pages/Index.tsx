@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import ConferenceHero from "@/components/ConferenceHero";
+import ConferenceInfo from "@/components/ConferenceInfo";
 import ConferenceObjectives from "@/components/ConferenceObjectives";
 import ConferenceThemes from "@/components/ConferenceThemes";
 import SubmissionInfo from "@/components/SubmissionInfo";
@@ -13,6 +14,7 @@ const Index = () => {
       <div id="hero">
         <ConferenceHero />
       </div>
+      <ConferenceInfo />
       <div id="objectives">
         <ConferenceObjectives />
       </div>
