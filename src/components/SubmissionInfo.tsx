@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { FileText, Calendar, Mail, Award, Globe } from "lucide-react";
 
 export default function SubmissionInfo() {
+  const handleEmailClick = () => {
+    window.location.href =
+      "mailto:hamid.slali@usmba.ac.ma?subject=Soumission de résumé - Colloque EDD3E&body=Bonjour Professeur SLALI,%0D%0A%0D%0AJe souhaite soumettre mon résumé pour le colloque EDD3E.%0D%0A%0D%0ACordialement,";
+  };
   return (
     <section className="py-16 bg-secondary/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,8 +31,8 @@ export default function SubmissionInfo() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-muted-foreground">
-                    <strong>Format :</strong> Résumé de 250-300 mots avec titre, prénom et nom, 
-                    affiliation, mots-clés et axe choisi
+                    <strong>Format :</strong> Résumé de 250-300 mots avec titre,
+                    prénom et nom, affiliation, mots-clés et axe choisi
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -40,8 +44,8 @@ export default function SubmissionInfo() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-muted-foreground">
-                    <strong>Public cible :</strong> Chercheurs, enseignants, doctorants, 
-                    éducateurs, acteurs associatifs et étudiants
+                    <strong>Public cible :</strong> Chercheurs, enseignants,
+                    doctorants, éducateurs, acteurs associatifs et étudiants
                   </p>
                 </div>
               </div>
@@ -60,19 +64,31 @@ export default function SubmissionInfo() {
               <div className="p-4 bg-destructive/10 rounded-lg border border-destructive/20">
                 <div className="flex items-center gap-3 mb-2">
                   <Mail className="h-5 w-5 text-destructive" />
-                  <span className="font-semibold text-destructive">Date Limite</span>
+                  <span className="font-semibold text-destructive">
+                    Date Limite
+                  </span>
                 </div>
-                <p className="text-lg font-bold text-destructive">30 septembre 2025</p>
-                <p className="text-sm text-muted-foreground">Soumission des résumés</p>
+                <p className="text-lg font-bold text-destructive">
+                  30 septembre 2025
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Soumission des résumés
+                </p>
               </div>
 
               <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
                 <div className="flex items-center gap-3 mb-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  <span className="font-semibold text-primary">Dates du Colloque</span>
+                  <span className="font-semibold text-primary">
+                    Dates du Colloque
+                  </span>
                 </div>
-                <p className="text-lg font-bold text-primary">25-27 novembre 2025</p>
-                <p className="text-sm text-muted-foreground">CCF/USMBA (présentiel et/ou à distance)</p>
+                <p className="text-lg font-bold text-primary">
+                  25-27 novembre 2025
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  CCF/USMBA (présentiel et/ou à distance)
+                </p>
               </div>
             </CardContent>
           </Card>
@@ -93,7 +109,11 @@ export default function SubmissionInfo() {
                 <p className="text-muted-foreground">hamid.slali@usmba.ac.ma</p>
                 <p className="text-muted-foreground">Tél : +212 661 461 302</p>
               </div>
-              <Button variant="nature" className="mt-4 w-full">
+              <Button
+                variant="nature"
+                className="mt-4 w-full"
+                onClick={handleEmailClick}
+              >
                 <Mail className="h-4 w-4 mr-2" />
                 Envoyer votre résumé
               </Button>
@@ -110,16 +130,15 @@ export default function SubmissionInfo() {
             <CardContent className="space-y-4">
               <div className="flex items-center gap-3">
                 <Globe className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">Langues du colloque : Français – Anglais</span>
+                <span className="text-muted-foreground">
+                  Langues du colloque : Français – Anglais
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <Award className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">Certificat de participation délivré</span>
-              </div>
-              <div className="p-3 bg-accent rounded-lg">
-                <p className="text-sm text-accent-foreground">
-                  🌐 Infos et inscription : Site web à venir
-                </p>
+                <span className="text-muted-foreground">
+                  Certificat de participation délivré
+                </span>
               </div>
             </CardContent>
           </Card>
