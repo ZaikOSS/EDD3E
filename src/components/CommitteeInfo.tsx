@@ -3,34 +3,98 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Crown, Users, BookOpen } from "lucide-react";
 
 const honorCommittee = [
-  { nom: "IJAALI", prenom: "Mustapha", etablissement: "Présidence USMBA/Maroc" },
+  {
+    nom: "IJAALI",
+    prenom: "Mustapha",
+    etablissement: "Présidence USMBA/Maroc",
+  },
   { nom: "AHAITOUF", prenom: "Ali", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "BENNANI DOSS", prenom: "Saad", etablissement: "ENS de Fès / USMBA/Maroc" }
+  {
+    nom: "BENNANI DOSS",
+    prenom: "Saad",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
 ];
 
 const organizationCommittee = [
   { nom: "BENAMAR", prenom: "Saad", etablissement: "ENS de Fès / USMBA/Maroc" },
   { nom: "SLALI", prenom: "Hamid", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "MERZOUKI", prenom: "Abdelouahid", etablissement: "Direction provinciale MNE de Fès" },
-  { nom: "ESSAHALE", prenom: "Adil", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "ZARROUQ", prenom: "Btissame", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "BEN BAQQAL", prenom: "Hicham", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "EL ASMI", prenom: "Hicham", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "EL KHATTABI", prenom: "Khalid", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "LAGUENINI", prenom: "Fouzia", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "LAMSAADI", prenom: "Nadia", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "BEN FARES", prenom: "Samiha", etablissement: "ENS de Fès / USMBA/Maroc" }
+  {
+    nom: "MERZOUKI",
+    prenom: "Abdelouahid",
+    etablissement: "Direction provinciale MNE de Fès",
+  },
+  {
+    nom: "ESSAHALE",
+    prenom: "Adil",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
+  {
+    nom: "ZARROUQ",
+    prenom: "Btissame",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
+  {
+    nom: "BEN BAQQAL",
+    prenom: "Hicham",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
+  {
+    nom: "EL ASMI",
+    prenom: "Hicham",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
+  {
+    nom: "EL KHATTABI",
+    prenom: "Khalid",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
+  {
+    nom: "LAGUENINI",
+    prenom: "Fouzia",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
+  {
+    nom: "LAMSAADI",
+    prenom: "Nadia",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
+  {
+    nom: "BEN FARES",
+    prenom: "Samiha",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
 ];
 
 const scientificCommittee = [
   { nom: "BENAMAR", prenom: "Saad", etablissement: "ENS de Fès / USMBA/Maroc" },
   { nom: "BENZIANE", prenom: "Zineb", etablissement: "FSDM, USMBA/ Maroc" },
-  { nom: "BEN BAQQAL", prenom: "Hicham", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "ESSAHALE", prenom: "Adil", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "HILALI", prenom: "Jawad", etablissement: "CRMEF de Fès-Meknès /Maroc" },
-  { nom: "MULNET", prenom: "Didier", etablissement: "ESPE de Chamalières /France" },
+  {
+    nom: "BEN BAQQAL",
+    prenom: "Hicham",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
+  {
+    nom: "ESSAHALE",
+    prenom: "Adil",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
+  {
+    nom: "HILALI",
+    prenom: "Jawad",
+    etablissement: "CRMEF de Fès-Meknès /Maroc",
+  },
+  {
+    nom: "MULNET",
+    prenom: "Didier",
+    etablissement: "ESPE de Chamalières /France",
+  },
   { nom: "SLALI", prenom: "Hamid", etablissement: "ENS de Fès / USMBA/Maroc" },
-  { nom: "LAMSAADI", prenom: "Nadia", etablissement: "ENS de Fès / USMBA/Maroc" }
+  {
+    nom: "LAMSAADI",
+    prenom: "Nadia",
+    etablissement: "ENS de Fès / USMBA/Maroc",
+  },
 ];
 
 interface Member {
@@ -49,17 +113,32 @@ function CommitteeTable({ members }: CommitteeTableProps) {
       <table className="w-full">
         <thead>
           <tr className="border-b border-border">
-            <th className="text-left py-3 px-4 font-semibold text-foreground">Nom</th>
-            <th className="text-left py-3 px-4 font-semibold text-foreground">Prénom</th>
-            <th className="text-left py-3 px-4 font-semibold text-foreground">Établissement / Pays</th>
+            <th className="text-left py-3 px-4 font-semibold text-foreground">
+              Nom
+            </th>
+            <th className="text-left py-3 px-4 font-semibold text-foreground">
+              Prénom
+            </th>
+            <th className="text-left py-3 px-4 font-semibold text-foreground">
+              Établissement / Pays
+            </th>
           </tr>
         </thead>
         <tbody>
           {members.map((member, index) => (
-            <tr key={index} className="border-b border-border/50 hover:bg-accent/50 transition-colors">
-              <td className="py-3 px-4 font-medium text-foreground">{member.nom}</td>
-              <td className="py-3 px-4 text-muted-foreground">{member.prenom}</td>
-              <td className="py-3 px-4 text-muted-foreground text-sm">{member.etablissement}</td>
+            <tr
+              key={index}
+              className="border-b border-border/50 hover:bg-accent/50 transition-colors"
+            >
+              <td className="py-3 px-4 font-medium text-foreground">
+                {member.nom}
+              </td>
+              <td className="py-3 px-4 text-muted-foreground">
+                {member.prenom}
+              </td>
+              <td className="py-3 px-4 text-muted-foreground text-sm">
+                {member.etablissement}
+              </td>
             </tr>
           ))}
         </tbody>
@@ -83,15 +162,18 @@ export default function CommitteeInfo() {
           <TabsList className="grid w-full grid-cols-3 mb-8">
             <TabsTrigger value="honor" className="flex items-center gap-2">
               <Crown className="h-4 w-4" />
-              Comité d'Honneur
+              Honneur
             </TabsTrigger>
-            <TabsTrigger value="organization" className="flex items-center gap-2">
+            <TabsTrigger
+              value="organization"
+              className="flex items-center gap-2"
+            >
               <Users className="h-4 w-4" />
-              Comité d'Organisation
+              Organisation
             </TabsTrigger>
             <TabsTrigger value="scientific" className="flex items-center gap-2">
               <BookOpen className="h-4 w-4" />
-              Comité Scientifique
+              Scientifique
             </TabsTrigger>
           </TabsList>
 
