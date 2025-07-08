@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import ConferenceHero from "@/components/ConferenceHero";
 import ConferenceObjectives from "@/components/ConferenceObjectives";
 import ConferenceThemes from "@/components/ConferenceThemes";
@@ -8,12 +9,25 @@ import ConferenceFooter from "@/components/ConferenceFooter";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <ConferenceHero />
-      <ConferenceObjectives />
-      <ConferenceThemes />
-      <SubmissionInfo />
-      <CommitteeInfo />
-      <ConferenceFooter />
+      <Navbar />
+      <div id="hero">
+        <ConferenceHero />
+      </div>
+      <div id="objectives">
+        <ConferenceObjectives />
+      </div>
+      <div id="themes">
+        <ConferenceThemes />
+      </div>
+      <div id="submission">
+        <SubmissionInfo />
+      </div>
+      <div id="committee">
+        <CommitteeInfo />
+      </div>
+      <div id="contact">
+        <ConferenceFooter />
+      </div>
     </div>
   );
 };
