@@ -50,6 +50,42 @@ export default function ConferenceInfo() {
           </Card>
         </div>
       </div>
+
+
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="text-center mb-12 mt-20">
+    <h2 className="text-3xl font-bold text-foreground mb-4">
+      Partenaire du Colloque
+    </h2>
+    <p className="text-muted-foreground max-w-2xl mx-auto">
+      Découvrez les partenaires du Premier Colloque International EDD3E
+    </p>
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    {/* Partner 1 */}
+    <Card className="bg-card border-border p-8 text-center hover:shadow-card transition-shadow">
+      <div className="flex items-center justify-center mb-6 h-28">
+        <img src="/partenaire1.png" alt="Université de Picardie" className="h-full object-contain" />
+      </div>
+      <h3 className="text-lg font-semibold text-foreground">
+        Université de Picardie Jules Verne Amiens
+      </h3>
+    </Card>
+
+    {/* Partner 2 */}
+    <Card className="bg-card border-border p-8 text-center hover:shadow-card transition-shadow">
+      <div className="flex items-center justify-center mb-6 h-28">
+        <img src="/LOGO_ENSF_.png" alt="École Normale Supérieure" className="h-full object-contain" />
+      </div>
+      <h3 className="text-lg font-semibold text-foreground">
+        École Normale Supérieure
+      </h3>
+    </Card>
+  </div>
+</div>
+
     </section>
+    
   );
 }
