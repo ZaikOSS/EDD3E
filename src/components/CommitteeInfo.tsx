@@ -85,7 +85,7 @@ const scientificCommittee = [
     etablissement: "CRMEF de Fès-Meknès /Maroc",
   },
   {
-    nom: "MELOUANI",
+    nom: "MELYANI",
     prenom: "Mohammed",
     etablissement: "Picardie Jules Verne Amiens /France",
   },
